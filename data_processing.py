@@ -1,7 +1,7 @@
 #Author:Paarth Sharma 
 #Filename: data processing
 #Project Name: spotify popularity predictor 
-#Creation Date: Nov 23 2025
+#Creation Date: Nov 20 2025
 #Modification Date: Nov 25 2025
 #Description: Preprocessed the spotify data, encodes categorical variables, scales the dataset, drops useless columns , splits the dataset into train, test and validation and dumps the model and datasets into seperate folders 
 import joblib
@@ -101,5 +101,6 @@ X.to_csv(f"{processed_data_path}/numeric_raw_data.csv", index=False)
 joblib.dump(scaler, f"{processed_data_path}/scaler.pkl")
 joblib.dump(scaler, f"{models_path}/scaler.pkl")
 joblib.dump(lb_enc, f"{models_path}/label_encoder.pkl")
+
 
 print("Preprocessing complete → data/processed/")
