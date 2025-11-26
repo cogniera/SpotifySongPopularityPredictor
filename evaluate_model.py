@@ -1,7 +1,7 @@
 #Author: Paarth Sharma 
 #Filename: evaluate model 
 #Project Name: spotify popularity predictor 
-#Creation Date: Nov 23 2025
+#Creation Date: Nov 20 2025
 #Modification Date: Nov 25 2025 
 #Description: Reads in the testing dataset , imports the trained model and tests it on the testing split of the dataset , gives metrics like root mean squared error, Mean absolute error , and r^2 score 
 import pandas as pd
@@ -31,4 +31,5 @@ r2 = r2_score(Y_test, preds)
 print("\nModel Evaluation on Test Set:")
 print(f"RMSE: {rmse:.4f}")
 print(f"MAE : {mae:.4f}")
+
 print(f"R²  : {r2:.4f}")
