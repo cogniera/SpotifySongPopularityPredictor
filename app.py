@@ -1,7 +1,7 @@
 #Author: Paarth Sharma 
 #Filename: app 
 #Project Name: spotify popularity predictor 
-#Creation Date: Nov 23 2025
+#Creation Date: Nov 20 2025
 #Modification Date: Nov 25 2025
 #Description: Creates a stream lit app to predict the popularity of a new song based on it's features, plots the correlation between different features of the graph , heatmap of the popularity score and other features , shows the important features of the model. Shows different metrics of the model's performance to display the user 
 import streamlit as st
@@ -223,4 +223,5 @@ with tabs[3]:
     #actual vs predicted 
     pred_df = pd.DataFrame({"actual": Y_test, "pred": gbr.predict(X_test)})
     fig4 = px.scatter(pred_df, x="actual", y="pred", title="Actual vs Predicted Popularity")
+
     st.plotly_chart(fig4, use_container_width=True)
