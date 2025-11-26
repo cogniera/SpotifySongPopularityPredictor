@@ -1,7 +1,7 @@
 #Author: Paarth Sharma 
 #Filename: Dockerfile 
 #Project Name: Spotify Popularity Predictor
-#Creation Date: Nov 23 2025
+#Creation Date: Nov 20 2025
 #Modification Date: Nov 25 2025
 #Description: Creates a isolated self contained environment with all the dependencies allows running the project wihtout installing anything on the host kernel 
 #base python image 
@@ -35,4 +35,5 @@ CMD bash -c "\
     python evaluate_model.py && \
     echo 'Launching Streamlit App...' && \
     streamlit run app.py --server.port=8501 --server.address=0.0.0.0 \
+
 "
