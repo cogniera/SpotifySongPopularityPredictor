@@ -2,7 +2,7 @@
 Author: Paarth Sharma  
 
 A complete end-to-end machine learning project that predicts the popularity score of a Spotify track using structured audio features and encoded genre information. This repository includes preprocessing scripts, model training, evaluation, and an interactive Streamlit app that ties everything together.
-
+Dataset used : https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset
 ---
 
 ## Overview
@@ -93,5 +93,6 @@ The goal of this project is not perfect accuracy but building a full ML pipeline
 
 ### for running this project open Docker on your Device and then run the docker file using the following : 
 docker build -t spotify-ml .    
+
 
 docker run -p 8501:8501 spotify-ml-app
