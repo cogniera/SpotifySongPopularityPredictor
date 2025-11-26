@@ -1,7 +1,7 @@
 #Author: Paarth Sharma 
 #Filename: train model 
 #Project Name: spotify popularity predictor 
-#Creation Date: Nov 23 2025
+#Creation Date: Nov 20 2025
 #Modification Date: Nov 25 2025
 #Description: imports the split test and training data, trains the data and also does Kfold validation to check if the model is overfitting, exports the model and stores it in a model folder 
 import pandas as pd
@@ -78,3 +78,4 @@ os.makedirs(model_path, exist_ok=True)
 joblib.dump(final_model, f"{model_path}/gbr_model.pkl")
 
 print("\nFinal model trained and saved → models/gbr_model.pkl")
+
